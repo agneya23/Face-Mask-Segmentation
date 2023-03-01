@@ -1,3 +1,4 @@
 # Face Mask Segmentation
 
-This is a CNN Model which performs the task of Image Segmentation on a dataset containing images of people wearing Covid-19 Face Masks and their corresponding ground truth Segmentation Masks. The model is a UNet Encoder-Decoder Model. The dataset was obtained from Kaggle.
+Segmentation is performed on a Face Mask Dataset. The segmentation masks highlight the location of a face mask on a person's face. Aim is to highlight the Face Masks on the test images. Face Detection is first performed using HaarCascades in OpenCV post which the DeepLabV3_resnet50 pre-trained segmentation model is fine-tuned on the pre-processed training set and evaluated on the extracted test set. 
+The dataset was obtained from Kaggle: https://www.kaggle.com/datasets/perke986/face-mask-segmentation-dataset
